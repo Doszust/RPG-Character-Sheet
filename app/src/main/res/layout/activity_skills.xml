@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parchment"
+    tools:context="com.ucfknights.dylan_oszust.dungeonsanddragons.SkillsActivity">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="STRENGTH"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                android:text="INTELLECT"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chkSleightOfHand" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                android:text="DEXTERITY"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chkAthletics" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                android:text="WISDOM"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chkInvestigation" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                android:text="CHARISMA"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chkAnimalHandling" />
+
+            <CheckBox
+                android:id="@+id/chkStrengthIntimidation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Intimidation"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkAthletics"
+                app:layout_constraintEnd_toStartOf="@+id/numStrengthIntimidation"
+                app:layout_constraintTop_toTopOf="@+id/chkAthletics" />
+
+            <CheckBox
+                android:id="@+id/chkAthletics"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Athletics"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numAthletics"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/numAthletics" />
+
+            <CheckBox
+                android:id="@+id/chkInvestigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Investigation"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numNature" />
+
+            <CheckBox
+                android:id="@+id/chkInsight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Insight"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+            <CheckBox
+                android:id="@+id/chkNature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Nature"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numArcana" />
+
+            <CheckBox
+                android:id="@+id/chkAcrobatics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Acrobatics"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+            <CheckBox
+                android:id="@+id/chkStealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Stealth"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numAcrobatics"
+                app:layout_constraintEnd_toStartOf="@+id/numStealth"
+                app:layout_constraintTop_toTopOf="@+id/numAcrobatics" />
+
+            <CheckBox
+                android:id="@+id/chkSleightOfHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Sleight Of Hand"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numAcrobatics" />
+
+            <CheckBox
+                android:id="@+id/chkArcana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Arcana"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+            <CheckBox
+                android:id="@+id/chkHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:onClick="setSkills"
+                android:text="History"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numArcana"
+                app:layout_constraintEnd_toStartOf="@+id/numHistory"
+                app:layout_constraintTop_toTopOf="@+id/numArcana" />
+
+            <CheckBox
+                android:id="@+id/chkReligion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Religion"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numNature"
+                app:layout_constraintStart_toStartOf="@+id/chkHistory"
+                app:layout_constraintTop_toTopOf="@+id/numNature" />
+
+            <CheckBox
+                android:id="@+id/chkMedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Medicine"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numPerception"
+                app:layout_constraintEnd_toStartOf="@+id/numMedicine"
+                app:layout_constraintTop_toTopOf="@+id/numPerception" />
+
+            <CheckBox
+                android:id="@+id/chkPersuasion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Persuasion"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkPerformance"
+                app:layout_constraintEnd_toStartOf="@+id/numPersuasion"
+                app:layout_constraintTop_toTopOf="@+id/chkPerformance"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <CheckBox
+                android:id="@+id/chkSurvival"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Survival"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numInsight"
+                app:layout_constraintStart_toStartOf="@+id/chkMedicine"
+                app:layout_constraintTop_toTopOf="@+id/numInsight" />
+
+            <CheckBox
+                android:id="@+id/chkPerception"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Perception"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numInsight" />
+
+            <CheckBox
+                android:id="@+id/chkPerformance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="setSkills"
+                android:text="Performance"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numDeception" />
+
+            <CheckBox
+                android:id="@+id/chkAnimalHandling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:onClick="setSkills"
+                android:text="Animal Handling"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numPerception" />
+
+            <TextView
+                android:id="@+id/numAthletics"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/chkAthletics"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <TextView
+                android:id="@+id/numStrengthIntimidation"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numAthletics"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/numAthletics"
+                app:layout_constraintVertical_bias="0.785" />
+
+            <TextView
+                android:id="@+id/numAcrobatics"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkAcrobatics"
+                app:layout_constraintStart_toEndOf="@+id/chkAcrobatics"
+                app:layout_constraintTop_toTopOf="@+id/chkAcrobatics" />
+
+            <TextView
+                android:id="@+id/numStealth"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkStealth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/chkStealth" />
+
+            <TextView
+                android:id="@+id/numSleightOfHand"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkSleightOfHand"
+                app:layout_constraintStart_toEndOf="@+id/chkSleightOfHand"
+                app:layout_constraintTop_toTopOf="@+id/chkSleightOfHand"
+                app:layout_constraintVertical_bias="0.428" />
+
+            <CheckBox
+                android:id="@+id/chkDeception"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="setSkills"
+                android:text="Deception"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+            <CheckBox
+                android:id="@+id/chkCharismaIntimidation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:onClick="setSkills"
+                android:text="Intimidation"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkDeception"
+                app:layout_constraintEnd_toStartOf="@+id/numCharismaIntimidation"
+                app:layout_constraintStart_toStartOf="@+id/chkPersuasion"
+                app:layout_constraintTop_toTopOf="@+id/chkDeception" />
+
+            <TextView
+                android:id="@+id/numArcana"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkArcana"
+                app:layout_constraintStart_toEndOf="@+id/chkArcana"
+                app:layout_constraintTop_toTopOf="@+id/chkArcana" />
+
+            <TextView
+                android:id="@+id/numNature"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkNature"
+                app:layout_constraintStart_toEndOf="@+id/chkNature"
+                app:layout_constraintTop_toTopOf="@+id/chkNature" />
+
+            <TextView
+                android:id="@+id/numHistory"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkHistory"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/chkHistory" />
+
+            <TextView
+                android:id="@+id/numReligion"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkReligion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/chkReligion"
+                app:layout_constraintTop_toTopOf="@+id/chkReligion" />
+
+            <TextView
+                android:id="@+id/numInvestigation"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkInvestigation"
+                app:layout_constraintStart_toEndOf="@+id/chkInvestigation"
+                app:layout_constraintTop_toTopOf="@+id/chkInvestigation" />
+
+            <TextView
+                android:id="@+id/numAnimalHandling"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkAnimalHandling"
+                app:layout_constraintStart_toEndOf="@+id/chkAnimalHandling"
+                app:layout_constraintTop_toTopOf="@+id/chkAnimalHandling" />
+
+            <TextView
+                android:id="@+id/numPerception"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkPerception"
+                app:layout_constraintStart_toEndOf="@+id/chkPerception"
+                app:layout_constraintTop_toTopOf="@+id/chkPerception" />
+
+            <TextView
+                android:id="@+id/numInsight"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkInsight"
+                app:layout_constraintStart_toEndOf="@+id/chkInsight"
+                app:layout_constraintTop_toTopOf="@+id/chkInsight" />
+
+            <TextView
+                android:id="@+id/numMedicine"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkMedicine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/chkMedicine" />
+
+            <TextView
+                android:id="@+id/numSurvival"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkSurvival"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/chkSurvival"
+                app:layout_constraintTop_toTopOf="@+id/chkSurvival" />
+
+            <TextView
+                android:id="@+id/numPerformance"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkPerformance"
+                app:layout_constraintStart_toEndOf="@+id/chkPerformance"
+                app:layout_constraintTop_toTopOf="@+id/chkPerformance" />
+
+            <TextView
+                android:id="@+id/numDeception"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkDeception"
+                app:layout_constraintStart_toEndOf="@+id/chkDeception"
+                app:layout_constraintTop_toTopOf="@+id/chkDeception" />
+
+            <TextView
+                android:id="@+id/numPersuasion"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkPersuasion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/chkPersuasion" />
+
+            <TextView
+                android:id="@+id/numCharismaIntimidation"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chkCharismaIntimidation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/chkCharismaIntimidation" />
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                android:onClick="btnProfileClickHandler"
+                android:text="PROFILE"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chkPerformance" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

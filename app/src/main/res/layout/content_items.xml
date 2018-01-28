@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ucfknights.dylan_oszust.dungeonsanddragons.ItemsActivity"
+    tools:showIn="@layout/app_bar_items"
+    android:background="@drawable/parchment"
+    >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddGold"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:onClick="addGold"
+            android:text="ADD"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSpendGold"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:onClick="spendGold"
+            android:paddingRight="0dp"
+            android:text="Spend"
+            android:textColor="@color/colorAccent"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
+            android:shadowColor="@color/colorPrimary"
+            android:shadowRadius="10"
+            android:text="GOLD: "
+            android:textAlignment="center"
+            android:textColor="#ffd700"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/goldAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="999999999"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
